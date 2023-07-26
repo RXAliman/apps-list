@@ -14,7 +14,15 @@
 		<canvas id="canvas" height="500" width="800">
 			App is unsupported by browser
 		</canvas>
-		<script src="scripts/fractal-maker.js"></script>
 	</div>
+	<div id="f-config">
+		Points:
+		<button id="f-points-dec" onclick="decreasePoints()">-</button>
+		<span id="f-points-text">3</span>
+		<button id="f-points-inc" onclick="increasePoints()">+</button>
+		<br><br>
+		<button id="start">Start</button>
+	</div>
+	<script src="scripts/fractal-maker.js"></script>
 </body>
 </html>
