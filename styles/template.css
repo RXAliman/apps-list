@@ -27,8 +27,3 @@ header button {
 	justify-content: center;
 	align-content: center;
 }
-
-#app-canvas {
-	height: 500px;
-	width: 800px;
-}
