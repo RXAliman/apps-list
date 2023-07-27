@@ -18,8 +18,9 @@ function increasePoints() {
 function decreasePoints() {
 	if (points <= 3) return;
 	
+	if (N == points) decreaseN();
 	points--;
-	if (N >= points) decreaseN();
+	
 	document.getElementById("f-points-text").innerHTML = points;
 	update();
 }
