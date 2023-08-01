@@ -39,6 +39,10 @@ class Gamepiece {
 	changeColor(color) {
 		this.fillColor = color;
 	}
+	move(mousePos) {
+		this.position.x = mousePos.x - pieceSize/2;
+		this.position.y = mousePos.y - pieceSize/2;
+	}
 	render() {
 		ctx.beginPath();
 		ctx.fillStyle = this.fillColor;
@@ -110,7 +114,7 @@ function updatePieces() {
 	// Update player pieces
 	Playerpieces.forEach(pp => {
 		if (pp.isDraggable && pp.isMouseOver(mouse) && mouse.isDown) {
-			pp.position = mouse;
+			pp.move(mouse);
 		}
 	});
 }
